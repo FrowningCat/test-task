@@ -1,1 +1,29 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  color: #000;
+  font-size: 16px;
+  overflow-y: scroll;
+}
+
+a {
+  color: #00466d;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: list-item;
+}
+
+nav {
+  white-space: nowrap;
+}/*# sourceMappingURL=main.css.map */
