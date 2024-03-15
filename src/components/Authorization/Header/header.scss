@@ -66,11 +66,39 @@ $guttar: 1.5rem;
                                 color: $textColorLi;
                                 padding: 1em 0.7em;
                                 transition: 0.3s;
+                                cursor: pointer;
+                                display: flex;
                             }
                             &__a:hover {
                                 color: $tectColorHover;
                                 background: $backgroundColorHover;
                             }
+                            &__newNav {
+                                background-color: #fff;
+                                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                                    0 3px 6px rgba(0, 0, 0, 0.23);
+                                display: none;
+                                position: absolute;
+                                max-height: 450px;
+                                overflow-y: auto;
+                                &__newUl {
+                                    &__newLi {
+                                        &__newA {
+                                            padding: 0.8em 1.5em;
+                                            display: flex;
+                                            color: $textColorLi;
+                                            transition: 0.3s;
+                                        }
+                                        &__newA:hover {
+                                            color: $tectColorHover;
+                                            background: $backgroundColorHover;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &__li:hover &__li__newNav {
+                            display: block;
                         }
                     }
                 }

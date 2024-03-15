@@ -31,6 +31,106 @@ export default function Header() {
                                     >
                                         О выставке
                                     </a>
+                                    <nav className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav">
+                                        <ul className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl">
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    О выставке
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Разделы выставки
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Список участников 2024
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Интерактивный план 2024
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Архивные списки
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Новости
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Официальная поддержка
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Партнеры выставки
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Место проведения
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Контакты
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Фото и видео
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Организатор
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                 </li>
                                 <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li">
                                     <a
@@ -39,6 +139,52 @@ export default function Header() {
                                     >
                                         Участие
                                     </a>
+                                    <nav className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav">
+                                        <ul className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl">
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Забронировать стенд
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Участие в выставке
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Застройка стендов
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Госсударственная поддержка
+                                                    участников
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Гостиницы и визовая
+                                                    поддержка
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                 </li>
                                 <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li">
                                     <a
@@ -47,14 +193,95 @@ export default function Header() {
                                     >
                                         Посещение
                                     </a>
+                                    <nav className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav">
+                                        <ul className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl">
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Посещение выставки
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Список участников 2024
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Правила посещения
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Место проведения
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Гостиницы и визовая
+                                                    поддержка
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Правила въезда а РФ
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                 </li>
                                 <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li">
                                     <a
                                         href=""
                                         className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__a"
                                     >
-                                        Деловая программ
+                                        Деловая программа
                                     </a>
+                                    <nav className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav">
+                                        <ul className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl">
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Деловая программа 2024
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Итоги деловой программы 2024
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Dairytech Awaed
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                 </li>
                                 <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li">
                                     <a
@@ -63,6 +290,43 @@ export default function Header() {
                                     >
                                         Медия
                                     </a>
+                                    <nav className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav">
+                                        <ul className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl">
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Материалы для прессы
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Новости
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Фото и видео
+                                                </a>
+                                            </li>
+                                            <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi">
+                                                <a
+                                                    href=""
+                                                    className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li__newNav__newUl__newLi__newA"
+                                                >
+                                                    Информационное
+                                                    сотрудничество
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                 </li>
                                 <li className="header__navigationBlok__buttonBlok__navigationButton__nuv__ul__li">
                                     <a
