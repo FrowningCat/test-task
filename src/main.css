@@ -5,8 +5,9 @@
 }
 
 html {
+  font: 112.5%/1.45 "Proxima", "Helvetica Neue", "Segoe UI", "Helvetica", "Arial", sans-serif;
   color: #000;
-  font-size: 16px;
+  font-size: 18px;
   overflow-y: scroll;
 }
 
@@ -26,4 +27,8 @@ li {
 
 nav {
   white-space: nowrap;
+}
+
+small {
+  font-size: 80%;
 }/*# sourceMappingURL=main.css.map */

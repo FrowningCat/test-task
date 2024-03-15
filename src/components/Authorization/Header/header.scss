@@ -9,116 +9,121 @@ $bgImage: '../../../assets/logo.png';
 
 $guttar: 1.5rem;
 
-.header {
-    display: block;
+.headerBlock {
     position: sticky;
-    padding-left: max($guttar, 50% - 850px);
-    padding-right: max($guttar, 50% - 850px);
-    &__contactsBlok {
-        background-color: $headerContactsBackgroundColor;
-        display: flex;
-        text-align: center;
-        padding-bottom: 0.5em;
-        padding-top: 0.5em;
-        &__connection {
-            border-right: 1px solid #9dadb7;
-            margin-left: auto;
-            padding-right: 1em;
-        }
-        &__language {
+    top: 0;
+    z-index: 10;
+    &__header {
+        height: 100%;
+        padding-left: max($guttar, 50% - 850px);
+        padding-right: max($guttar, 50% - 850px);
+        &__contactsBlok {
+            background-color: $headerContactsBackgroundColor;
             display: flex;
-            gap: 0.5em;
-            padding: 0 1em;
+            text-align: center;
+            padding-bottom: 0.5em;
+            padding-top: 0.5em;
+            &__connection {
+                border-right: 1px solid #9dadb7;
+                margin-left: auto;
+                padding-right: 1em;
+            }
+            &__language {
+                display: flex;
+                gap: 0.5em;
+                padding: 0 1em;
+            }
         }
-    }
-    &__navigationBlok {
-        background-color: $headerNavigationBackgroundColor;
-        align-items: center;
-        border-bottom: 1px solid #f5f5f5;
-        display: flex;
-        flex: 1 1;
-        padding: 1em 0;
-        &__buttonBlok {
+        &__navigationBlok {
+            font-size: 14px;
+            background-color: $headerNavigationBackgroundColor;
             align-items: center;
+            border-bottom: 1px solid #f5f5f5;
             display: flex;
             flex: 1 1;
-            &__a {
-                max-height: 3rem;
-                max-width: 8rem;
-                &__img {
-                    background-image: url(../../../assets/logo.png);
-                    vertical-align: top;
-                }
-            }
-            &__navigationButton {
-                margin-left: 1em;
+            padding: 1em 0;
+            &__buttonBlok {
+                align-items: center;
                 display: flex;
                 flex: 1 1;
-                &__nuv {
+                &__a {
+                    max-height: 3rem;
+                    max-width: 8rem;
+                    &__img {
+                        background-image: url(../../../assets/logo.png);
+                        vertical-align: top;
+                    }
+                }
+                &__navigationButton {
+                    margin-left: 1em;
+                    display: flex;
                     flex: 1 1;
-                    white-space: nowrap;
-                    &__ul {
-                        display: flex;
-                        justify-content: center;
-                        position: relative;
-                        &__li {
-                            &__a {
-                                color: $textColorLi;
-                                padding: 1em 0.7em;
-                                transition: 0.3s;
-                                cursor: pointer;
-                                display: flex;
-                            }
-                            &__a:hover {
-                                color: $tectColorHover;
-                                background: $backgroundColorHover;
-                            }
-                            &__newNav {
-                                background-color: #fff;
-                                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
-                                    0 3px 6px rgba(0, 0, 0, 0.23);
-                                display: none;
-                                position: absolute;
-                                max-height: 450px;
-                                overflow-y: auto;
-                                &__newUl {
-                                    &__newLi {
-                                        &__newA {
-                                            padding: 0.8em 1.5em;
-                                            display: flex;
-                                            color: $textColorLi;
-                                            transition: 0.3s;
-                                        }
-                                        &__newA:hover {
-                                            color: $tectColorHover;
-                                            background: $backgroundColorHover;
+                    &__nuv {
+                        flex: 1 1;
+                        white-space: nowrap;
+                        &__ul {
+                            display: flex;
+                            justify-content: center;
+                            position: relative;
+                            &__li {
+                                &__a {
+                                    color: $textColorLi;
+                                    padding: 1em 0.7em;
+                                    transition: 0.3s;
+                                    cursor: pointer;
+                                    display: flex;
+                                }
+                                &__a:hover {
+                                    color: $tectColorHover;
+                                    background: $backgroundColorHover;
+                                }
+                                &__newNav {
+                                    background-color: #fff;
+                                    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                                        0 3px 6px rgba(0, 0, 0, 0.23);
+                                    display: none;
+                                    position: absolute;
+                                    max-height: 450px;
+                                    overflow-y: auto;
+                                    &__newUl {
+                                        &__newLi {
+                                            &__newA {
+                                                padding: 0.8em 1.5em;
+                                                display: flex;
+                                                color: $textColorLi;
+                                                transition: 0.3s;
+                                            }
+                                            &__newA:hover {
+                                                color: $tectColorHover;
+                                                background: $backgroundColorHover;
+                                            }
                                         }
                                     }
                                 }
                             }
-                        }
-                        &__li:hover &__li__newNav {
-                            display: block;
+                            &__li:hover &__li__newNav {
+                                display: block;
+                            }
                         }
                     }
                 }
             }
-        }
-        &__bookingButton {
-            gap: 0.3em;
-            &__a {
-                align-items: center;
-                border: 3px solid #00466d;
-                cursor: pointer;
-                display: flex;
-                justify-content: center;
-                padding: calc(1em - 3px) calc(1.3em - 3px);
-                transition: 0.3s;
-                white-space: nowrap;
-            }
-            &__a:hover {
-                color: $tectColorHover;
-                background-color: $backgroundColorHover;
+            &__bookingButton {
+                gap: 0.3em;
+                &__a {
+                    align-items: center;
+                    border: 3px solid #00466d;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    padding: calc(1em - 3px) calc(1.3em - 3px);
+                    transition: 0.3s;
+                    white-space: nowrap;
+                }
+                &__a:hover {
+                    color: $tectColorHover;
+                    background-color: $backgroundColorHover;
+                }
             }
         }
     }
