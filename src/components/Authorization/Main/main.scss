@@ -1,37 +1,90 @@
 $tectColorH1: #fff;
 $shadowTectColorH1: #242c31;
 
-$guttar: 1.5rem;
+$guttar: 0rem;
+$guttarrr: 3rem;
 
 $bgImageH1: '../../../assets/cover.png';
 
 .main {
     height: 100%;
-    margin-left: max(var($guttar), 50% - 850px);
-    margin-right: max(var($guttar), 50% - 850px);
-    &__imgBlock {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        width: 100%;
-        &__text {
-            color: $tectColorH1;
-            font-weight: 700;
-            margin: 0;
-            max-width: 1200px;
-            padding: 4rem 2rem;
-            text-align: center;
-            text-shadow: 2px 2px 8px $shadowTectColorH1;
-            text-transform: uppercase;
-            z-index: 1;
-        }
-        &__img {
-            background-image: url(../../../assets/cover.png);
-            height: 100%;
-            -o-object-fit: cover;
-            object-fit: cover;
-            position: absolute;
+    &__registrationBlock {
+        height: 100%;
+        margin-left: max(var(&guttar), 50% - 850px);
+        margin-right: max(var(&guttar), 50% - 850px);
+        &__imgBlock {
+            display: flex;
+            justify-content: center;
+            position: relative;
             width: 100%;
+            &__text {
+                color: $tectColorH1;
+                font-weight: 700;
+                margin: 0;
+                max-width: 1200px;
+                padding: 4rem 2rem;
+                text-align: center;
+                text-shadow: 2px 2px 8px $shadowTectColorH1;
+                text-transform: uppercase;
+                z-index: 1;
+            }
+            &__img {
+                background-image: url(../../../assets/cover.png);
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                position: absolute;
+                width: 100%;
+            }
+        }
+        &__registrationForm {
+            height: 100%;
+            margin-left: max(var(&guttarrr), 50% - 850px);
+            margin-right: max(var(&guttarrr), 50% - 850px);
+            &__block {
+                margin: 0 auto;
+                max-width: 1200px;
+                padding-bottom: 3rem;
+                margin-top: 4rem;
+                &__form {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    &__mainBlock {
+                        background-color: rgb(255, 255, 255);
+                        border-radius: 5px;
+                        padding: 30px;
+                        width: 500px;
+                        color: rgb(0, 0, 0);
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 30px 0px;
+                        position: absolute;
+                        &__content {
+                            display: flex;
+                            min-width: 0;
+                            width: 100%;
+                            flex: 12;
+                            &__reg {
+                                flex: 1;
+                                min-width: 0;
+                                &__title {
+                                    text-align: center;
+                                    line-height: 1.2;
+                                    padding-bottom: 15px;
+                                    word-break: break-word;
+                                    font-family: 'Open Sans', 'Arial',
+                                        sans-serif;
+                                    font-size: 13px;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
+}
+
+span {
+    font-size: 20px;
 }

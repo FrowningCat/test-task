@@ -1,15 +1,18 @@
 .main {
   height: 100%;
-  margin-left: max(var(1.5rem), 50% - 850px);
-  margin-right: max(var(1.5rem), 50% - 850px);
 }
-.main__imgBlock {
+.main__registrationBlock {
+  height: 100%;
+  margin-left: max(var(.main__registrationBlock guttar), 50% - 850px);
+  margin-right: max(var(.main__registrationBlock guttar), 50% - 850px);
+}
+.main__registrationBlock__imgBlock {
   display: flex;
   justify-content: center;
   position: relative;
   width: 100%;
 }
-.main__imgBlock__text {
+.main__registrationBlock__imgBlock__text {
   color: #fff;
   font-weight: 700;
   margin: 0;
@@ -20,11 +23,59 @@
   text-transform: uppercase;
   z-index: 1;
 }
-.main__imgBlock__img {
+.main__registrationBlock__imgBlock__img {
   background-image: url(../../../assets/cover.png);
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
   width: 100%;
+}
+.main__registrationBlock__registrationForm {
+  height: 100%;
+  margin-left: max(var(.main__registrationBlock__registrationForm guttarrr), 50% - 850px);
+  margin-right: max(var(.main__registrationBlock__registrationForm guttarrr), 50% - 850px);
+}
+.main__registrationBlock__registrationForm__block {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-bottom: 3rem;
+  margin-top: 4rem;
+}
+.main__registrationBlock__registrationForm__block__form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.main__registrationBlock__registrationForm__block__form__mainBlock {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 30px;
+  width: 500px;
+  color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 30px 0px;
+  position: absolute;
+}
+.main__registrationBlock__registrationForm__block__form__mainBlock__content {
+  display: flex;
+  min-width: 0;
+  width: 100%;
+  flex: 12;
+}
+.main__registrationBlock__registrationForm__block__form__mainBlock__content__reg {
+  flex: 1;
+  min-width: 0;
+}
+.main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__title {
+  text-align: center;
+  line-height: 1.2;
+  padding-bottom: 15px;
+  word-break: break-word;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 13px;
+  color: #000;
+}
+
+span {
+  font-size: 20px;
 }/*# sourceMappingURL=main.css.map */
