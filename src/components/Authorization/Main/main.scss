@@ -1,0 +1,37 @@
+$tectColorH1: #fff;
+$shadowTectColorH1: #242c31;
+
+$guttar: 1.5rem;
+
+$bgImageH1: '../../../assets/cover.png';
+
+.main {
+    height: 100%;
+    margin-left: max(var($guttar), 50% - 850px);
+    margin-right: max(var($guttar), 50% - 850px);
+    &__imgBlock {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        &__text {
+            color: $tectColorH1;
+            font-weight: 700;
+            margin: 0;
+            max-width: 1200px;
+            padding: 4rem 2rem;
+            text-align: center;
+            text-shadow: 2px 2px 8px $shadowTectColorH1;
+            text-transform: uppercase;
+            z-index: 1;
+        }
+        &__img {
+            background-image: url(../../../assets/cover.png);
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+        }
+    }
+}

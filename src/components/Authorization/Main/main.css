@@ -1,1 +1,30 @@
-/*# sourceMappingURL=main.css.map */
+.main {
+  height: 100%;
+  margin-left: max(var(1.5rem), 50% - 850px);
+  margin-right: max(var(1.5rem), 50% - 850px);
+}
+.main__imgBlock {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.main__imgBlock__text {
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  max-width: 1200px;
+  padding: 4rem 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 8px #242c31;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.main__imgBlock__img {
+  background-image: url(../../../assets/cover.png);
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
