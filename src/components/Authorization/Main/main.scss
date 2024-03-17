@@ -57,7 +57,7 @@ $bgImageH1: '../../../assets/cover.png';
                         width: 500px;
                         color: rgb(0, 0, 0);
                         box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 30px 0px;
-                        position: absolute;
+
                         &__content {
                             display: flex;
                             min-width: 0;
@@ -181,7 +181,7 @@ $bgImageH1: '../../../assets/cover.png';
                                             border: none;
                                         }
                                         &__button:hover {
-                                            background-color: #4f616c;
+                                            background-color: #000066;
                                         }
                                     }
                                 }
