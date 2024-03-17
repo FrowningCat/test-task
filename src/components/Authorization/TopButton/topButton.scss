@@ -1,0 +1,21 @@
+.topButtonHidden {
+    display: none;
+}
+
+.topButton {
+    background-color: #00466d;
+    border-radius: 5px;
+    bottom: 5vh;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.6em 1em;
+    position: fixed;
+    right: 20px;
+    display: block;
+    &__svg {
+        display: var(--fa-display, inline-block);
+        height: 1em;
+        overflow: visible;
+        vertical-align: -0.125em;
+    }
+}
