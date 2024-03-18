@@ -1,8 +1,8 @@
 .footer {
-  --gutter: 1.5rem;
+  box-sizing: border-box;
   height: 100%;
-  padding-left: max(var(--gutter), 50% - 850px);
-  padding-right: max(var(--gutter), 50% - 850px);
+  padding-left: max(var(1.5rem), 50% - 850px);
+  padding-right: max(var(1.5rem), 50% - 850px);
 }
 .footer__contextBlock {
   align-items: center;

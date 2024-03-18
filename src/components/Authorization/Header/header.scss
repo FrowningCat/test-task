@@ -15,14 +15,14 @@ $bgImage: '../../../assets/logo.png';
     z-index: 10;
     &__header {
         height: 100%;
-        padding-left: max($guttar, 50% - 850px);
-        padding-right: max($guttar, 50% - 850px);
         &__contactsBlok {
             background-color: $headerContactsBackgroundColor;
             display: flex;
             text-align: center;
             padding-bottom: 0.5em;
             padding-top: 0.5em;
+            padding-left: max($guttar, 50% - 850px);
+            padding-right: max($guttar, 50% - 850px);
             &__connection {
                 border-right: 1px solid #9dadb7;
                 margin-left: auto;
@@ -42,16 +42,20 @@ $bgImage: '../../../assets/logo.png';
             display: flex;
             flex: 1 1;
             padding: 1em 0;
+            padding-left: max($guttar, 50% - 850px);
+            padding-right: max($guttar, 50% - 850px);
             &__buttonBlok {
                 align-items: center;
                 display: flex;
                 flex: 1 1;
                 &__a {
-                    max-height: 3rem;
-                    max-width: 8rem;
-                    &__img {
-                        background-image: url(../../../assets/logo.png);
+                    &__imgBlock {
                         vertical-align: top;
+                        &__img {
+                            opacity: 1;
+                            max-height: 3rem;
+                            max-width: 8rem;
+                        }
                     }
                 }
                 &__navigationButton {

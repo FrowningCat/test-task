@@ -1,4 +1,5 @@
 import './header.css';
+import logo from '../../../assets/logo.png';
 
 export default function Header() {
     return (
@@ -22,7 +23,16 @@ export default function Header() {
                 <div className="headerBlock__header__navigationBlok">
                     <div className="headerBlock__header__navigationBlok__buttonBlok">
                         <a className="headerBlock__header__navigationBlok__buttonBlok__a">
-                            <div className="headerBlock__header__navigationBlok__buttonBlok__a__img"></div>
+                            <div className="headerBlock__header__navigationBlok__buttonBlok__a__imgBlock">
+                                <img
+                                    src={logo}
+                                    alt=""
+                                    className="headerBlock__header__navigationBlok__buttonBlok__a__imgBlock__img"
+                                    sizes="(min-width: 227px) 227px, 100vw"
+                                    decoding="async"
+                                    loading="lazy"
+                                />
+                            </div>
                         </a>
                         <div className="headerBlock__header__navigationBlok__buttonBlok__navigationButton">
                             <nav className="headerBlock__header__navigationBlok__buttonBlok__navigationButton__nuv">

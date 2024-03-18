@@ -1,8 +1,10 @@
+$guttar: 1.5rem;
+
 .footer {
-    --gutter: 1.5rem;
+    box-sizing: border-box;
     height: 100%;
-    padding-left: max(var(--gutter), 50% - 850px);
-    padding-right: max(var(--gutter), 50% - 850px);
+    padding-left: max(var($guttar), 50% - 850px);
+    padding-right: max(var($guttar), 50% - 850px);
     &__contextBlock {
         align-items: center;
         background-color: #e9edef;

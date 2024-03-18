@@ -5,8 +5,6 @@
 }
 .headerBlock__header {
   height: 100%;
-  padding-left: max(1.5rem, 50% - 850px);
-  padding-right: max(1.5rem, 50% - 850px);
 }
 .headerBlock__header__contactsBlok {
   background-color: #e9edef;
@@ -14,6 +12,8 @@
   text-align: center;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
+  padding-left: max(1.5rem, 50% - 850px);
+  padding-right: max(1.5rem, 50% - 850px);
 }
 .headerBlock__header__contactsBlok__connection {
   border-right: 1px solid #9dadb7;
@@ -33,19 +33,21 @@
   display: flex;
   flex: 1 1;
   padding: 1em 0;
+  padding-left: max(1.5rem, 50% - 850px);
+  padding-right: max(1.5rem, 50% - 850px);
 }
 .headerBlock__header__navigationBlok__buttonBlok {
   align-items: center;
   display: flex;
   flex: 1 1;
 }
-.headerBlock__header__navigationBlok__buttonBlok__a {
+.headerBlock__header__navigationBlok__buttonBlok__a__imgBlock {
+  vertical-align: top;
+}
+.headerBlock__header__navigationBlok__buttonBlok__a__imgBlock__img {
+  opacity: 1;
   max-height: 3rem;
   max-width: 8rem;
-}
-.headerBlock__header__navigationBlok__buttonBlok__a__img {
-  background-image: url(../../../assets/logo.png);
-  vertical-align: top;
 }
 .headerBlock__header__navigationBlok__buttonBlok__navigationButton {
   margin-left: 1em;
