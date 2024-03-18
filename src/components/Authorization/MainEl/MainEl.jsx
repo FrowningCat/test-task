@@ -1,4 +1,4 @@
-import './main.css';
+import './mainEl.css';
 
 export default function Main() {
     return (
@@ -367,7 +367,9 @@ export default function Main() {
                                                 </div>
                                             </div>
                                             <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divA">
-                                                <a href="">Положение премии</a>
+                                                <a href="" className="a">
+                                                    Положение премии
+                                                </a>
                                             </div>
                                             <label className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label">
                                                 Согласие на получение
@@ -468,13 +470,13 @@ export default function Main() {
                                                     <br />
                                                     Подтверждаю, что ознакомлен
                                                     и согласен с (1)&nbsp;
-                                                    <a href="">
+                                                    <a href="" className="a">
                                                         Политикой обработки и
                                                         обеспечения безопасности
                                                         персональных данных
                                                     </a>
                                                     (2) и&nbsp;
-                                                    <a href="">
+                                                    <a href="" className="a">
                                                         Правилами посещения
                                                         мероприятий
                                                     </a>
