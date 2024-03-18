@@ -13,7 +13,7 @@ $guttar: 1.5rem;
         flex-direction: column;
         &__contacts {
             display: flex;
-            gap: 3em;
+            gap: 2em;
             padding: 2em 0;
             &__left {
                 display: flex;
@@ -21,9 +21,17 @@ $guttar: 1.5rem;
                 flex-direction: column;
                 gap: 1em;
                 &__imgBlock {
+                    display: grid;
+                    gap: 1em;
                     margin-bottom: 2em;
-                    &__specificImg:not(:last-child) {
+                    &__specificImg {
                         margin-bottom: 1em;
+                        &__a {
+                            &__img {
+                                max-height: 2em !important;
+                                width: auto;
+                            }
+                        }
                     }
                     &__img {
                         &__vk {

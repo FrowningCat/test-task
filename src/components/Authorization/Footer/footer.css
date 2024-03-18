@@ -13,7 +13,7 @@
 }
 .footer__contextBlock__contacts {
   display: flex;
-  gap: 3em;
+  gap: 2em;
   padding: 2em 0;
 }
 .footer__contextBlock__contacts__left {
@@ -23,10 +23,16 @@
   gap: 1em;
 }
 .footer__contextBlock__contacts__left__imgBlock {
+  display: grid;
+  gap: 1em;
   margin-bottom: 2em;
 }
-.footer__contextBlock__contacts__left__imgBlock__specificImg:not(:last-child) {
+.footer__contextBlock__contacts__left__imgBlock__specificImg {
   margin-bottom: 1em;
+}
+.footer__contextBlock__contacts__left__imgBlock__specificImg__a__img {
+  max-height: 2em !important;
+  width: auto;
 }
 .footer__contextBlock__contacts__left__imgBlock__img__vk {
   color: #4f616c;

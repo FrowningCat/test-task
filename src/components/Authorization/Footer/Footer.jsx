@@ -1,4 +1,6 @@
 import './footer.css';
+import ITEnew from '../../../assets/ITE_logo_new.png';
+import ITEeurasian from '../../../assets/ITE_Eurasian_logo-01.png';
 
 export default function Fotter() {
     return (
@@ -9,10 +11,31 @@ export default function Fotter() {
                         <h5>Организатор</h5>
                         <div className="footer__contextBlock__contacts__left__imgBlock">
                             <div className='className="footer__contextBlock__contacts__left__imgBlock__specificImg'>
-                                <a href="">1</a>
+                                <a href="">
+                                    <img
+                                        src={ITEnew}
+                                        alt=""
+                                        className="footer__contextBlock__contacts__left__imgBlock__specificImg__a__img"
+                                        sizes="(min-width: 227px) 227px, 100vw"
+                                        decoding="async"
+                                        loading="lazy"
+                                    />
+                                </a>
                             </div>
                             <div className='className="footer__contextBlock__contacts__left__imgBlock__specificImg'>
-                                <a href="">2</a>
+                                <a
+                                    href=""
+                                    className="footer__contextBlock__contacts__left__imgBlock__specificImg__a"
+                                >
+                                    <img
+                                        src={ITEeurasian}
+                                        alt=""
+                                        className="footer__contextBlock__contacts__left__imgBlock__specificImg__a__img"
+                                        sizes="(min-width: 227px) 227px, 100vw"
+                                        decoding="async"
+                                        loading="lazy"
+                                    />
+                                </a>
                             </div>
                         </div>
                         <h5>Мы в соцсетях</h5>
