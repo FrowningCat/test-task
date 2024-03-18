@@ -1,0 +1,98 @@
+.footer {
+    --gutter: 1.5rem;
+    height: 100%;
+    padding-left: max(var(--gutter), 50% - 850px);
+    padding-right: max(var(--gutter), 50% - 850px);
+    &__contextBlock {
+        align-items: center;
+        background-color: #e9edef;
+        color: #4f616c;
+        display: flex;
+        flex-direction: column;
+        &__contacts {
+            display: flex;
+            gap: 3em;
+            padding: 2em 0;
+            &__left {
+                display: flex;
+                flex: 1 1;
+                flex-direction: column;
+                gap: 1em;
+                &__imgBlock {
+                    margin-bottom: 2em;
+                    &__specificImg:not(:last-child) {
+                        margin-bottom: 1em;
+                    }
+                    &__img {
+                        &__vk {
+                            color: #4f616c;
+                            font-size: 1.4em;
+                            transition: 0.3s;
+                            &__svg {
+                                box-sizing: content-box;
+                                overflow: visible;
+                                display: var(--fa-display, inline-block);
+                                height: 1em;
+                                overflow: visible;
+                                vertical-align: -0.125em;
+                                font-size: 1.4em;
+                                transition: 0.3s;
+                            }
+                        }
+                        &__vk:hover &__vk__svg {
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
+            &__right {
+                display: flex;
+                flex: 1 1;
+                flex-direction: column;
+                gap: 1em;
+                &__a {
+                    margin-bottom: 0.5em;
+                    &__svg {
+                        box-sizing: content-box;
+                        overflow: visible;
+                        font-size: 0.9em;
+                        margin-left: 0.5em;
+                        transition: all 0.3s ease-out;
+                        height: 1em;
+                        overflow: visible;
+                        vertical-align: -0.125em;
+                    }
+                }
+                &__a:hover &__a__svg {
+                    margin-left: 1em;
+                }
+                &__a:hover {
+                    color: #4f616c;
+                }
+            }
+        }
+        &__bootomRow {
+            align-self: start;
+            border-top: 1px solid #f5f5f5;
+            display: flex;
+            gap: 7em;
+            justify-content: center;
+            padding: 2em;
+            width: 100%;
+            &__a {
+                align-items: center;
+                color: inherit;
+                cursor: pointer;
+                display: inline-flex;
+                text-decoration: underline;
+                white-space: nowrap;
+                width: -webkit-fit-content;
+                width: -moz-fit-content;
+                width: fit-content;
+            }
+            &__a:hover {
+                color: #00466d;
+            }
+        }
+    }
+}

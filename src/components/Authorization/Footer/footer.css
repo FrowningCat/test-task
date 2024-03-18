@@ -1,1 +1,95 @@
-/*# sourceMappingURL=footer.css.map */
+.footer {
+  --gutter: 1.5rem;
+  height: 100%;
+  padding-left: max(var(--gutter), 50% - 850px);
+  padding-right: max(var(--gutter), 50% - 850px);
+}
+.footer__contextBlock {
+  align-items: center;
+  background-color: #e9edef;
+  color: #4f616c;
+  display: flex;
+  flex-direction: column;
+}
+.footer__contextBlock__contacts {
+  display: flex;
+  gap: 3em;
+  padding: 2em 0;
+}
+.footer__contextBlock__contacts__left {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  gap: 1em;
+}
+.footer__contextBlock__contacts__left__imgBlock {
+  margin-bottom: 2em;
+}
+.footer__contextBlock__contacts__left__imgBlock__specificImg:not(:last-child) {
+  margin-bottom: 1em;
+}
+.footer__contextBlock__contacts__left__imgBlock__img__vk {
+  color: #4f616c;
+  font-size: 1.4em;
+  transition: 0.3s;
+}
+.footer__contextBlock__contacts__left__imgBlock__img__vk__svg {
+  box-sizing: content-box;
+  overflow: visible;
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  font-size: 1.4em;
+  transition: 0.3s;
+}
+.footer__contextBlock__contacts__left__imgBlock__img__vk:hover .footer__contextBlock__contacts__left__imgBlock__img__vk__svg {
+  font-size: 2em;
+}
+.footer__contextBlock__contacts__right {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  gap: 1em;
+}
+.footer__contextBlock__contacts__right__a {
+  margin-bottom: 0.5em;
+}
+.footer__contextBlock__contacts__right__a__svg {
+  box-sizing: content-box;
+  overflow: visible;
+  font-size: 0.9em;
+  margin-left: 0.5em;
+  transition: all 0.3s ease-out;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.footer__contextBlock__contacts__right__a:hover .footer__contextBlock__contacts__right__a__svg {
+  margin-left: 1em;
+}
+.footer__contextBlock__contacts__right__a:hover {
+  color: #4f616c;
+}
+.footer__contextBlock__bootomRow {
+  align-self: start;
+  border-top: 1px solid #f5f5f5;
+  display: flex;
+  gap: 7em;
+  justify-content: center;
+  padding: 2em;
+  width: 100%;
+}
+.footer__contextBlock__bootomRow__a {
+  align-items: center;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  text-decoration: underline;
+  white-space: nowrap;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer__contextBlock__bootomRow__a:hover {
+  color: #00466d;
+}/*# sourceMappingURL=footer.css.map */
