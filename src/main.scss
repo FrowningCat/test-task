@@ -36,3 +36,9 @@ nav {
 small {
     font-size: 80%;
 }
+
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}

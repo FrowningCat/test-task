@@ -1,6 +1,12 @@
+import { useState } from 'react';
+
 import './mainEl.css';
 
 export default function Main() {
+    const regEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,5}$/;
+    const regPhone = /\++[0-9]/;
+    const regName = /[a-z]/;
+
     return (
         <main className="main">
             <div className="main__registrationBlock">
