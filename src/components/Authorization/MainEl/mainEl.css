@@ -98,6 +98,15 @@
   font-family: inherit;
   word-break: break-word;
 }
+.main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__labelError {
+  font-size: inherit;
+  color: red;
+  display: block;
+  line-height: normal;
+  padding-bottom: 4px;
+  font-family: inherit;
+  word-break: break-word;
+}
 .main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input {
   font-family: inherit;
   font-size: 13px;
@@ -114,9 +123,28 @@
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
-.main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__error {
-  font-size: 12px;
+.main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__inputError {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding: 0 8px;
+  transition: border 0.2s;
+  border-radius: 2px;
+  outline: none;
+  background-color: #fff;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid red;
+}
+.main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone {
   display: none;
+}
+.main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorBlock {
+  font-size: 12px;
+  display: block;
   padding-top: 4px;
   color: red;
 }
