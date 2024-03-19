@@ -80,6 +80,16 @@ export default function Main() {
     const [errorApprovalLabel, setErrorApprovalLabel] = useState(
         'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
     );
+    const [errorApprovalDiv, setErrorApprovalDiv] = useState(
+        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
+    );
+
+    const [errorDataProcessingLabel, setErrorDataProcessingLabel] = useState(
+        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
+    );
+    const [erroDataProcessingDiv, setErrorDataProcessingDiv] = useState(
+        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
+    );
 
     function registration() {
         let nameCompany = document.getElementById('nameCompany').value;
@@ -89,7 +99,8 @@ export default function Main() {
         let email = document.getElementById('email').value;
         let nameProduct = document.getElementById('nameProduct').value;
         let description = document.getElementById('description').value;
-        let approval = document.getElementById('approval').value;
+        let approval = document.getElementById('approval');
+        let dataProcessing = document.getElementById('dataProcessing');
 
         if (nameCompany.length === 0) {
             setErrorNameCompanyLabel(
@@ -245,13 +256,35 @@ export default function Main() {
             );
         }
 
-        if (approval.checked === 0) {
+        if (approval.checked == 0) {
             setErrorApprovalLabel(
                 'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__labelError'
+            );
+            setErrorApprovalDiv(
+                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorBlock'
             );
         } else {
             setErrorApprovalLabel(
                 'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
+            );
+            setErrorApprovalDiv(
+                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
+            );
+        }
+
+        if (dataProcessing.checked == 0) {
+            setErrorDataProcessingLabel(
+                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__labelError'
+            );
+            setErrorDataProcessingDiv(
+                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorBlock'
+            );
+        } else {
+            setErrorDataProcessingLabel(
+                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
+            );
+            setErrorDataProcessingDiv(
+                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
             );
         }
     }
@@ -658,6 +691,11 @@ export default function Main() {
                                                         о Премии
                                                     </label>
                                                 </div>
+                                                <div
+                                                    className={errorApprovalDiv}
+                                                >
+                                                    Error
+                                                </div>
                                             </div>
                                             <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divA">
                                                 <a href="" className="a">
@@ -710,12 +748,17 @@ export default function Main() {
                                                     </label>
                                                 </div>
                                             </div>
-                                            <label className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label">
+                                            <label
+                                                className={
+                                                    errorDataProcessingLabel
+                                                }
+                                            >
                                                 Обработка персональных данных*
                                             </label>
                                             <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox">
                                                 <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain">
                                                     <input
+                                                        id="dataProcessing"
                                                         value="14"
                                                         type="checkbox"
                                                         className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
@@ -727,6 +770,13 @@ export default function Main() {
                                                         Согласие на обработку
                                                         персональных данных
                                                     </label>
+                                                </div>
+                                                <div
+                                                    className={
+                                                        erroDataProcessingDiv
+                                                    }
+                                                >
+                                                    Error
                                                 </div>
                                             </div>
                                             <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divSpan">
