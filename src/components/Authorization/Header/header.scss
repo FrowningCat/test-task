@@ -2,10 +2,13 @@ $headerContactsBackgroundColor: #e9edef;
 $headerNavigationBackgroundColor: #fff;
 $tectColorHover: #fff;
 $backgroundColorHover: #00466d;
+$aBorderColor: #00466d;
+$navBlockColor: #fff;
+$textColorLi: #000;
+$borderBottom: #f5f5f5;
+$borderRight: #9dadb7;
 
 $guttar: 1.5rem;
-
-$textColorLi: #000;
 
 $bgImage: '../../../assets/logo.png';
 
@@ -24,7 +27,7 @@ $bgImage: '../../../assets/logo.png';
             padding-left: max($guttar, 50% - 850px);
             padding-right: max($guttar, 50% - 850px);
             &__connection {
-                border-right: 1px solid #9dadb7;
+                border-right: 1px solid $borderRight;
                 margin-left: auto;
                 padding-right: 1em;
             }
@@ -38,7 +41,7 @@ $bgImage: '../../../assets/logo.png';
             font-size: 14px;
             background-color: $headerNavigationBackgroundColor;
             align-items: center;
-            border-bottom: 1px solid #f5f5f5;
+            border-bottom: 1px solid $borderBottom;
             display: flex;
             flex: 1 1;
             padding: 1em 0;
@@ -82,7 +85,7 @@ $bgImage: '../../../assets/logo.png';
                                     background: $backgroundColorHover;
                                 }
                                 &__newNav {
-                                    background-color: #fff;
+                                    background-color: $navBlockColor;
                                     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
                                         0 3px 6px rgba(0, 0, 0, 0.23);
                                     display: none;
@@ -116,7 +119,7 @@ $bgImage: '../../../assets/logo.png';
                 gap: 0.3em;
                 &__a {
                     align-items: center;
-                    border: 3px solid #00466d;
+                    border: 3px solid $aBorderColor;
                     cursor: pointer;
                     display: flex;
                     justify-content: center;

@@ -1,5 +1,10 @@
 $tectColorH1: #fff;
 $shadowTectColorH1: #242c31;
+$mainTextColor: #000;
+$errorTextColor: red;
+$buttonColor: #003e69;
+$buttonColorHover: #000066;
+$buttonTextColor: #fff;
 
 $guttar: 0rem;
 $guttarrr: 3rem;
@@ -55,7 +60,7 @@ $bgImageH1: '../../../assets/cover.png';
                         border-radius: 5px;
                         padding: 30px;
                         width: 500px;
-                        color: rgb(0, 0, 0);
+                        color: $mainTextColor;
                         box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 30px 0px;
                         &__content {
                             display: flex;
@@ -88,7 +93,7 @@ $bgImageH1: '../../../assets/cover.png';
                                 }
                                 &__inputObligatory {
                                     padding-bottom: 10px;
-                                    color: #000;
+                                    color: $mainTextColor;
                                     font-size: 14px;
                                     &__label {
                                         font-size: inherit;
@@ -101,7 +106,7 @@ $bgImageH1: '../../../assets/cover.png';
                                     }
                                     &__labelError {
                                         font-size: inherit;
-                                        color: red;
+                                        color: $errorTextColo;
                                         display: block;
                                         line-height: normal;
                                         padding-bottom: 4px;
@@ -138,7 +143,7 @@ $bgImageH1: '../../../assets/cover.png';
                                         background-color: #fff;
                                         margin: 0;
                                         -webkit-font-smoothing: antialiased;
-                                        border: 1px solid red;
+                                        border: 1px solid $errorTextColo;
                                     }
                                     &__errorNone {
                                         display: none;
@@ -147,7 +152,7 @@ $bgImageH1: '../../../assets/cover.png';
                                         font-size: 12px;
                                         display: block;
                                         padding-top: 4px;
-                                        color: red;
+                                        color: $errorTextColo;
                                     }
                                     &__divCheckbox {
                                         box-sizing: border-box;
@@ -158,7 +163,7 @@ $bgImageH1: '../../../assets/cover.png';
                                         padding-bottom: 10px;
                                         &__certain {
                                             align-items: baseline;
-                                            color: #000;
+                                            color: $mainTextColor;
                                             font-size: 14px;
                                             display: flex;
                                             flex-direction: row;
@@ -180,7 +185,7 @@ $bgImageH1: '../../../assets/cover.png';
                                         text-align: left;
                                         line-height: 1.2;
                                         padding-bottom: 10px;
-                                        color: #000;
+                                        color: $mainTextColor;
                                         word-break: break-word;
                                         font-family: 'Open Sans', 'Arial',
                                             sans-serif;
@@ -190,7 +195,7 @@ $bgImageH1: '../../../assets/cover.png';
                                         text-align: left;
                                         line-height: 1.2;
                                         padding-bottom: 10px;
-                                        color: #000;
+                                        color: $mainTextColor;
                                         &__span {
                                             font-size: 10px;
                                         }
@@ -198,9 +203,9 @@ $bgImageH1: '../../../assets/cover.png';
                                     &__divButton {
                                         padding-top: 50px;
                                         &__button {
-                                            background-color: #003e69;
+                                            background-color: $buttonColor;
                                             border-radius: 2px;
-                                            color: #ffffff;
+                                            color: $buttonTextColor;
                                             line-height: 1.2em;
                                             font-size: 14px;
                                             width: 100%;
@@ -208,7 +213,7 @@ $bgImageH1: '../../../assets/cover.png';
                                             border: none;
                                         }
                                         &__button:hover {
-                                            background-color: #000066;
+                                            background-color: $buttonColorHover;
                                         }
                                     }
                                 }

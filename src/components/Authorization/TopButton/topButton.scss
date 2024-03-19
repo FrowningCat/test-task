@@ -1,12 +1,15 @@
+$buttonBGColor: #00466d;
+$textColor: #fff;
+
 .topButtonHidden {
     display: none;
 }
 
 .topButton {
-    background-color: #00466d;
+    background-color: $buttonBGColor;
     border-radius: 5px;
     bottom: 5vh;
-    color: #fff;
+    color: $textColor;
     cursor: pointer;
     padding: 0.6em 1em;
     position: fixed;

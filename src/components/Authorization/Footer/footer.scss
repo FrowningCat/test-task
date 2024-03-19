@@ -1,3 +1,8 @@
+$aHoverColor: #00466d;
+$textColor: #4f616c;
+$backgroundColor: #e9edef;
+$borderColor: #f5f5f5;
+
 $guttar: 1.5rem;
 
 .footer {
@@ -7,8 +12,8 @@ $guttar: 1.5rem;
     padding-right: max(var($guttar), 50% - 850px);
     &__contextBlock {
         align-items: center;
-        background-color: #e9edef;
-        color: #4f616c;
+        background-color: $backgroundColor;
+        color: $textColor;
         display: flex;
         flex-direction: column;
         &__contacts {
@@ -83,7 +88,7 @@ $guttar: 1.5rem;
         }
         &__bootomRow {
             align-self: start;
-            border-top: 1px solid #f5f5f5;
+            border-top: 1px solid $borderColor;
             display: flex;
             gap: 7em;
             justify-content: center;
@@ -100,7 +105,7 @@ $guttar: 1.5rem;
                 width: fit-content;
             }
             &__a:hover {
-                color: #00466d;
+                color: $aHoverColor;
             }
         }
     }
