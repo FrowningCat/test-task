@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { inputOblogatory } from './data/inputOblogatory';
+import { divCheckbox } from './data/divCheckbox';
 
 import './mainEl.css';
 
@@ -195,205 +196,48 @@ export default function Main() {
                                             <label className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label">
                                                 Номинации DairyTech Award 2024
                                             </label>
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox">
-                                                <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain">
-                                                    <input
-                                                        value="1"
-                                                        type="checkbox"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    ></input>
-                                                    <label
-                                                        type="text"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    >
-                                                        Оборудование и
-                                                        технологии для
-                                                        производства, розлива и
-                                                        упаковки цельномолочной,
-                                                        кисломолочной групп
-                                                        продукции
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox">
-                                                <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain">
-                                                    <input
-                                                        value="2"
-                                                        type="checkbox"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    ></input>
-                                                    <label
-                                                        type="text"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    >
-                                                        Оборудование и
-                                                        технологии для
-                                                        производства, розлива,
-                                                        упаковки и хранения
-                                                        мороженого
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox">
-                                                <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain">
-                                                    <input
-                                                        value="3"
-                                                        type="checkbox"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    ></input>
-                                                    <label
-                                                        type="text"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    >
-                                                        Оборудование и
-                                                        технологии для
-                                                        производства, розлива и
-                                                        упаковки продуктов
-                                                        сыроделия (сыры и сырные
-                                                        продукты)
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox">
-                                                <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain">
-                                                    <input
-                                                        value="4"
-                                                        type="checkbox"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    ></input>
-                                                    <label
-                                                        type="text"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    >
-                                                        Оборудование и
-                                                        технологии для
-                                                        производства, розлива и
-                                                        упаковки продуктов
-                                                        маслоделия (масло
-                                                        сливочное, спреды)
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox">
-                                                <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain">
-                                                    <input
-                                                        value="5"
-                                                        type="checkbox"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    ></input>
-                                                    <label
-                                                        type="text"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    >
-                                                        Оборудование и
-                                                        технологии для
-                                                        производства, розлива и
-                                                        упаковки сухих молочных
-                                                        продуктов и продуктов
-                                                        глубокой переработки
-                                                        молока
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox">
-                                                <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain">
-                                                    <input
-                                                        value="6"
-                                                        type="checkbox"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    ></input>
-                                                    <label
-                                                        type="text"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    >
-                                                        Современные упаковочные
-                                                        решения
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox">
-                                                <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain">
-                                                    <input
-                                                        value="7"
-                                                        type="checkbox"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    ></input>
-                                                    <label
-                                                        type="text"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    >
-                                                        Ингредиенты
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox">
-                                                <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain">
-                                                    <input
-                                                        value="8"
-                                                        type="checkbox"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    ></input>
-                                                    <label
-                                                        type="text"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    >
-                                                        Автоматизация и
-                                                        цифровизация технологий
-                                                        в молочном производстве
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox">
-                                                <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain">
-                                                    <input
-                                                        value="9"
-                                                        type="checkbox"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    ></input>
-                                                    <label
-                                                        type="text"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    >
-                                                        Автоматизация и
-                                                        цифровизация
-                                                        бизнес-процессов в
-                                                        молочном производстве
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox">
-                                                <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain">
-                                                    <input
-                                                        value="10"
-                                                        type="checkbox"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    ></input>
-                                                    <label
-                                                        type="text"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    >
-                                                        Технологии и средства
-                                                        контроля качества
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox">
-                                                <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain">
-                                                    <input
-                                                        value="11"
-                                                        type="checkbox"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    ></input>
-                                                    <label
-                                                        type="text"
-                                                        className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox__certain__input"
-                                                    >
-                                                        Моющие и дезинфицирующие
-                                                        средства в молочной
-                                                        промышленности
-                                                    </label>
-                                                </div>
-                                            </div>
+                                            {divCheckbox.length &&
+                                                divCheckbox.map((item) => {
+                                                    return (
+                                                        <>
+                                                            <div
+                                                                className={
+                                                                    item.divCheckboxClassName
+                                                                }
+                                                            >
+                                                                <div
+                                                                    className={
+                                                                        item.divCheckboxCertainClassName
+                                                                    }
+                                                                >
+                                                                    <input
+                                                                        value={
+                                                                            item.inputValue
+                                                                        }
+                                                                        type={
+                                                                            item.inputType
+                                                                        }
+                                                                        className={
+                                                                            item.inputClassName
+                                                                        }
+                                                                    ></input>
+                                                                    <label
+                                                                        type={
+                                                                            item.labelType
+                                                                        }
+                                                                        className={
+                                                                            item.labelClassName
+                                                                        }
+                                                                    >
+                                                                        {
+                                                                            item.labelText
+                                                                        }
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </>
+                                                    );
+                                                })}
                                             <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory">
                                                 <label
                                                     className={
