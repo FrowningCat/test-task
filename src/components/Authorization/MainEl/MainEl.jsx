@@ -1,62 +1,9 @@
 import { useState } from 'react';
+import { inputOblogatory } from './data/inputOblogatory';
 
 import './mainEl.css';
 
 export default function Main() {
-    const regEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,5}$/;
-    const regPhone = /\++[0-9]/;
-    const regName = /[a-z]/;
-
-    const [errorNameCompanyLabel, setErrorNameCompanyLabel] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-    );
-    const [errorNameCompany, setErrorNameCompany] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-    );
-    const [errorNameCompanyDiv, setErrorNameCompanyDiv] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-    );
-
-    const [errorNameLabel, setErrorNameLabel] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-    );
-    const [errorName, setErrorName] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-    );
-    const [errorNameDiv, setErrorNameDiv] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-    );
-
-    const [errorSurnameLabel, setErrorSurnameLabel] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-    );
-    const [errorSurname, setErrorSurname] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-    );
-    const [errorSurnameDiv, setErrorSurnameDiv] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-    );
-
-    const [errorTelephoneLabel, setErrorTelephoneLabel] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-    );
-    const [errorTelephone, setErrorTelephone] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-    );
-    const [errorTelephoneDiv, setErrorTelephoneDiv] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-    );
-
-    const [errorMailLabel, setErrorMailLabel] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-    );
-    const [errorMail, setErrorMail] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-    );
-    const [errorMailDiv, setErrorMailDiv] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-    );
-
     const [errorNameProductLabel, setErrorNameProductLabel] = useState(
         'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
     );
@@ -92,125 +39,10 @@ export default function Main() {
     );
 
     function registration() {
-        let nameCompany = document.getElementById('nameCompany').value;
-        let name = document.getElementById('name').value;
-        let surname = document.getElementById('surname').value;
-        let telephone = document.getElementById('telephone').value;
-        let email = document.getElementById('email').value;
         let nameProduct = document.getElementById('nameProduct').value;
         let description = document.getElementById('description').value;
         let approval = document.getElementById('approval');
         let dataProcessing = document.getElementById('dataProcessing');
-
-        if (nameCompany.length === 0) {
-            setErrorNameCompanyLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__labelError'
-            );
-            setErrorNameCompany(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__inputError'
-            );
-            setErrorNameCompanyDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorBlock'
-            );
-        } else {
-            setErrorNameCompanyLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-            );
-            setErrorNameCompany(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-            );
-            setErrorNameCompanyDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-            );
-        }
-
-        if (name.length === 0) {
-            setErrorName(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__inputError'
-            );
-            setErrorNameLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__labelError'
-            );
-            setErrorNameDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorBlock'
-            );
-        } else {
-            setErrorName(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-            );
-            setErrorNameLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-            );
-            setErrorNameDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-            );
-        }
-
-        if (surname.length === 0) {
-            setErrorSurnameLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__labelError'
-            );
-            setErrorSurname(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__inputError'
-            );
-            setErrorSurnameDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorBlock'
-            );
-        } else {
-            setErrorSurnameLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-            );
-            setErrorSurname(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-            );
-            setErrorSurnameDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-            );
-        }
-
-        if (telephone.length === 0) {
-            setErrorTelephoneLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__labelError'
-            );
-            setErrorTelephone(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__inputError'
-            );
-            setErrorTelephoneDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorBlock'
-            );
-        } else {
-            setErrorTelephoneLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-            );
-            setErrorTelephone(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-            );
-            setErrorTelephoneDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-            );
-        }
-
-        if (email.length === 0) {
-            setErrorMailLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__labelError'
-            );
-            setErrorMail(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__inputError'
-            );
-            setErrorMailDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorBlock'
-            );
-        } else {
-            setErrorMailLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-            );
-            setErrorMail(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-            );
-            setErrorMailDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-            );
-        }
 
         if (nameProduct.length === 0) {
             setErrorNameProductLabel(
@@ -311,100 +143,44 @@ export default function Main() {
                                                 </strong>
                                             </span>
                                         </div>
-                                        <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory">
-                                            <label
-                                                className={
-                                                    errorNameCompanyLabel
-                                                }
-                                            >
-                                                Название компании*
-                                            </label>
-                                            <input
-                                                type="text"
-                                                id="nameCompany"
-                                                className={errorNameCompany}
-                                            />
-                                            <div
-                                                className={errorNameCompanyDiv}
-                                            >
-                                                Error
-                                            </div>
-                                        </div>
-                                        <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory">
-                                            <label className={errorNameLabel}>
-                                                Имя*
-                                            </label>
-                                            <input
-                                                id="name"
-                                                type="text"
-                                                className={errorName}
-                                            />
-                                            <div className={errorNameDiv}>
-                                                Error
-                                            </div>
-                                        </div>
-                                        <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory">
-                                            <label
-                                                className={errorSurnameLabel}
-                                            >
-                                                Фамилия*
-                                            </label>
-                                            <input
-                                                id="surname"
-                                                type="text"
-                                                className={errorSurname}
-                                            />
-                                            <div className={errorSurnameDiv}>
-                                                Error
-                                            </div>
-                                        </div>
-                                        <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory">
-                                            <label
-                                                className={errorTelephoneLabel}
-                                            >
-                                                Телефон*
-                                            </label>
-                                            <input
-                                                id="telephone"
-                                                type="text"
-                                                className={errorTelephone}
-                                            />
-                                            <div className={errorTelephoneDiv}>
-                                                Error
-                                            </div>
-                                        </div>
-                                        <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory">
-                                            <label className={errorMailLabel}>
-                                                Email*
-                                            </label>
-                                            <input
-                                                id="email"
-                                                placeholder="Введите ваш email"
-                                                type="text"
-                                                className={errorMail}
-                                            />
-                                            <div className={errorMailDiv}>
-                                                Error
-                                            </div>
-                                        </div>
-                                        <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory">
-                                            <label className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label">
-                                                Сайт
-                                            </label>
-                                            <input
-                                                type="text"
-                                                className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input"
-                                            />
-                                        </div>
-                                        <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory">
-                                            <label className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label">
-                                                Аккаунты в социальных сетях
-                                            </label>
-                                            <input
-                                                type="text"
-                                                className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input"
-                                            />
-                                        </div>
+                                        {inputOblogatory.length &&
+                                            inputOblogatory.map((item) => {
+                                                return (
+                                                    <>
+                                                        <div
+                                                            className={
+                                                                item.divClassName
+                                                            }
+                                                        >
+                                                            <label
+                                                                className={
+                                                                    item.labelClassName
+                                                                }
+                                                            >
+                                                                {item.labelText}
+                                                            </label>
+                                                            <input
+                                                                type={
+                                                                    item.inputType
+                                                                }
+                                                                id={
+                                                                    item.inputId
+                                                                }
+                                                                className={
+                                                                    item.inputClassName
+                                                                }
+                                                            />
+                                                            <div
+                                                                className={
+                                                                    item.errorClassName
+                                                                }
+                                                            >
+                                                                {item.errorText}
+                                                            </div>
+                                                        </div>
+                                                    </>
+                                                );
+                                            })}
                                         <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__title__two">
                                             <span>
                                                 <strong>
