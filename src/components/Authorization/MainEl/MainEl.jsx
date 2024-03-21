@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { inputOblogatory } from './data/inputOblogatory';
 import { divCheckbox } from './data/divCheckbox';
+import { inputObligatory } from './data/inputObligatory';
 
 import './mainEl.css';
 
@@ -238,59 +239,48 @@ export default function Main() {
                                                         </>
                                                     );
                                                 })}
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory">
-                                                <label
-                                                    className={
-                                                        errorNameProductLabel
-                                                    }
-                                                >
-                                                    Название*
-                                                </label>
-                                                <input
-                                                    id="nameProduct"
-                                                    type="text"
-                                                    className={errorNameProduct}
-                                                />
-                                                <div
-                                                    className={
-                                                        errorNameProductDiv
-                                                    }
-                                                >
-                                                    Error
-                                                </div>
-                                            </div>
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory">
-                                                <label
-                                                    className={
-                                                        errorDescriptionLabel
-                                                    }
-                                                >
-                                                    Описание*
-                                                </label>
-                                                <input
-                                                    id="description"
-                                                    type="text"
-                                                    className={errorDescription}
-                                                />
-                                                <div
-                                                    className={
-                                                        errorDescriptionDiv
-                                                    }
-                                                >
-                                                    Error
-                                                </div>
-                                            </div>
-                                            <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory">
-                                                <label className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label">
-                                                    Ссылка на доп. материалы
-                                                    (изображение, видео,
-                                                    документы)
-                                                </label>
-                                                <input
-                                                    type="text"
-                                                    className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input"
-                                                />
-                                            </div>
+                                            {inputObligatory.length &&
+                                                inputObligatory.map((item) => {
+                                                    return (
+                                                        <>
+                                                            <div
+                                                                className={
+                                                                    item.divClassName
+                                                                }
+                                                            >
+                                                                <label
+                                                                    className={
+                                                                        item.labelClassName
+                                                                    }
+                                                                >
+                                                                    {
+                                                                        item.labelText
+                                                                    }
+                                                                </label>
+                                                                <input
+                                                                    id={
+                                                                        item.inputId
+                                                                    }
+                                                                    type={
+                                                                        item.inputType
+                                                                    }
+                                                                    className={
+                                                                        item.inputClassName
+                                                                    }
+                                                                />
+                                                                <div
+                                                                    className={
+                                                                        item.errorClassName
+                                                                    }
+                                                                >
+                                                                    {
+                                                                        item.errorText
+                                                                    }
+                                                                </div>
+                                                            </div>
+                                                        </>
+                                                    );
+                                                })}
                                             <div className="main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__divCheckbox">
                                                 <label
                                                     className={
