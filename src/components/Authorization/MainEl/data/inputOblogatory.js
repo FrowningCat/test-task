@@ -63,6 +63,7 @@ export const inputOblogatory = [
         labelText: 'Email*',
         inputId: 'email',
         inputType: 'text',
+        inputPlaceholder: 'введите mail',
         inputClassName:
             'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input',
         errorClassName:
@@ -79,9 +80,6 @@ export const inputOblogatory = [
         inputType: 'text',
         inputClassName:
             'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input',
-        errorClassName:
-            'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone',
-        errorText: 'Пустое поле',
     },
     {
         divClassName:
@@ -93,8 +91,5 @@ export const inputOblogatory = [
         inputType: 'text',
         inputClassName:
             'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input',
-        errorClassName:
-            'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone',
-        errorText: 'Пустое поле',
     },
 ];

@@ -166,6 +166,9 @@ export default function Main() {
                                                                 id={
                                                                     item.inputId
                                                                 }
+                                                                placeholder={
+                                                                    item.inputPlaceholder
+                                                                }
                                                                 className={
                                                                     item.inputClassName
                                                                 }
