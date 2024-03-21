@@ -6,26 +6,6 @@ import { inputObligatory } from './data/inputObligatory';
 import './mainEl.css';
 
 export default function Main() {
-    const [errorNameProductLabel, setErrorNameProductLabel] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-    );
-    const [errorNameProduct, setErrorNameProduct] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-    );
-    const [errorNameProductDiv, setErrorNameProductDiv] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-    );
-
-    const [errorDescriptionLabel, setErrorDescriptionLabel] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-    );
-    const [errorDescription, setErrorDescription] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-    );
-    const [errorDescriptionDiv, setErrorDescriptionDiv] = useState(
-        'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-    );
-
     const [errorApprovalLabel, setErrorApprovalLabel] = useState(
         'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
     );
@@ -41,54 +21,8 @@ export default function Main() {
     );
 
     function registration() {
-        let nameProduct = document.getElementById('nameProduct').value;
-        let description = document.getElementById('description').value;
-        let approval = document.getElementById('approval');
         let dataProcessing = document.getElementById('dataProcessing');
-
-        if (nameProduct.length === 0) {
-            setErrorNameProductLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__labelError'
-            );
-            setErrorNameProduct(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__inputError'
-            );
-            setErrorNameProductDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorBlock'
-            );
-        } else {
-            setErrorNameProductLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-            );
-            setErrorNameProduct(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-            );
-            setErrorNameProductDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-            );
-        }
-
-        if (description.length === 0) {
-            setErrorDescriptionLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__labelError'
-            );
-            setErrorDescription(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__inputError'
-            );
-            setErrorDescriptionDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorBlock'
-            );
-        } else {
-            setErrorDescriptionLabel(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__label'
-            );
-            setErrorDescription(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__input'
-            );
-            setErrorDescriptionDiv(
-                'main__registrationBlock__registrationForm__block__form__mainBlock__content__reg__inputObligatory__errorNone'
-            );
-        }
+        let approval = document.getElementById('approval');
 
         if (approval.checked == 0) {
             setErrorApprovalLabel(
